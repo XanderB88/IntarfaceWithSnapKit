@@ -6,14 +6,35 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
 
+    // Labels
+    lazy var titleLabel = UILabel(text: "Welcome", textColor: .blue, font: .tittleFont)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .yellow
+        
+        setupConstraints()
     }
+}
 
-
+// MARK: - Setup constraints
+extension ViewController {
+    
+    fileprivate func setupConstraints() {
+        
+        view.backgroundColor = .yellow
+        
+        view.addSubview(titleLabel)
+    
+        titleLabel.snp.makeConstraints { make in
+            
+            make.top.equalToSuperview().inset(300)
+            make.centerX.equalToSuperview()
+            
+        }
+    }
 }
 

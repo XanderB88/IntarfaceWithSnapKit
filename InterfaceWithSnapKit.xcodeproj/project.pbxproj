@@ -12,6 +12,9 @@
 		118EB8A927AE012E00191330 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EB8A827AE012E00191330 /* ViewController.swift */; };
 		118EB8AE27AE013100191330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 118EB8AD27AE013100191330 /* Assets.xcassets */; };
 		118EB8B127AE013100191330 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118EB8AF27AE013100191330 /* LaunchScreen.storyboard */; };
+		118EB8BC27AE136E00191330 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EB8BB27AE136E00191330 /* UILabel + Extension.swift */; };
+		118EB8BE27AE152B00191330 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EB8BD27AE152B00191330 /* UIFont + Extension.swift */; };
+		2405C8CA5E4A19828780DF52 /* Pods_InterfaceWithSnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3978052F41548DD751F215E7 /* Pods_InterfaceWithSnapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		118EB8AD27AE013100191330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		118EB8B027AE013100191330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		118EB8B227AE013100191330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		118EB8BB27AE136E00191330 /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
+		118EB8BD27AE152B00191330 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
+		3978052F41548DD751F215E7 /* Pods_InterfaceWithSnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterfaceWithSnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		855B52CDA16DEF77A7AA0E86 /* Pods-InterfaceWithSnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterfaceWithSnapKit.release.xcconfig"; path = "Target Support Files/Pods-InterfaceWithSnapKit/Pods-InterfaceWithSnapKit.release.xcconfig"; sourceTree = "<group>"; };
+		B0C665EA94C91196DA4E65DA /* Pods-InterfaceWithSnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterfaceWithSnapKit.debug.xcconfig"; path = "Target Support Files/Pods-InterfaceWithSnapKit/Pods-InterfaceWithSnapKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2405C8CA5E4A19828780DF52 /* Pods_InterfaceWithSnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				118EB8A327AE012E00191330 /* InterfaceWithSnapKit */,
 				118EB8A227AE012E00191330 /* Products */,
+				7FA62DF8B08EEC7DF34FDB05 /* Pods */,
+				2E0323F9B1D8513427E5222A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +65,7 @@
 		118EB8A327AE012E00191330 /* InterfaceWithSnapKit */ = {
 			isa = PBXGroup;
 			children = (
+				118EB8BA27AE132500191330 /* Extentions */,
 				118EB8B827AE03D000191330 /* Application */,
 				118EB8A827AE012E00191330 /* ViewController.swift */,
 				118EB8B927AE03EE00191330 /* SupportingFiles */,
@@ -80,6 +92,32 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		118EB8BA27AE132500191330 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				118EB8BB27AE136E00191330 /* UILabel + Extension.swift */,
+				118EB8BD27AE152B00191330 /* UIFont + Extension.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		2E0323F9B1D8513427E5222A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3978052F41548DD751F215E7 /* Pods_InterfaceWithSnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FA62DF8B08EEC7DF34FDB05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0C665EA94C91196DA4E65DA /* Pods-InterfaceWithSnapKit.debug.xcconfig */,
+				855B52CDA16DEF77A7AA0E86 /* Pods-InterfaceWithSnapKit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 118EB8B527AE013100191330 /* Build configuration list for PBXNativeTarget "InterfaceWithSnapKit" */;
 			buildPhases = (
+				1C589CF0EF75AF5A67DA55FD /* [CP] Check Pods Manifest.lock */,
 				118EB89D27AE012E00191330 /* Sources */,
 				118EB89E27AE012E00191330 /* Frameworks */,
 				118EB89F27AE012E00191330 /* Resources */,
+				78E4E07B395D5D84FBCF8B6C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,14 +185,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C589CF0EF75AF5A67DA55FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InterfaceWithSnapKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78E4E07B395D5D84FBCF8B6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InterfaceWithSnapKit/Pods-InterfaceWithSnapKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InterfaceWithSnapKit/Pods-InterfaceWithSnapKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InterfaceWithSnapKit/Pods-InterfaceWithSnapKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		118EB89D27AE012E00191330 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				118EB8BE27AE152B00191330 /* UIFont + Extension.swift in Sources */,
 				118EB8A927AE012E00191330 /* ViewController.swift in Sources */,
 				118EB8A527AE012E00191330 /* AppDelegate.swift in Sources */,
 				118EB8A727AE012E00191330 /* SceneDelegate.swift in Sources */,
+				118EB8BC27AE136E00191330 /* UILabel + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +372,7 @@
 		};
 		118EB8B627AE013100191330 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0C665EA94C91196DA4E65DA /* Pods-InterfaceWithSnapKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +400,7 @@
 		};
 		118EB8B727AE013100191330 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 855B52CDA16DEF77A7AA0E86 /* Pods-InterfaceWithSnapKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
